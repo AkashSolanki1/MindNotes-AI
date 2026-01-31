@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDE8F5"
+    android:padding="18dp"
+    tools:context=".UpdateNoteActivity">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/editNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Edit Note"
+            android:textColor="#1C4D8D"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/updateSaveButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_orange_bg"
+            android:padding="10dp"
+            android:src="@drawable/baseline_done_24"
+            app:tint="@color/white"
+            android:contentDescription="Update" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAi"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@id/editNoteHeading"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ai_chip_bg"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="✨ AI Enhancer"
+            android:textAllCaps="false"
+            android:textColor="#1C4D8D"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- Title Card -->
+    <LinearLayout
+        android:id="@+id/titleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_bg"
+        android:elevation="6dp"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/updateTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins"
+            android:hint="Title"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9E9E"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Content Card -->
+    <LinearLayout
+        android:id="@+id/contentCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleCard"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/card_bg"
+        android:elevation="6dp"
+        android:padding="14dp">
+
+        <EditText
+            android:id="@+id/updateContentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins"
+            android:gravity="top"
+            android:hint="Start editing your note..."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="#9E9E9E"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</RelativeLayout>
