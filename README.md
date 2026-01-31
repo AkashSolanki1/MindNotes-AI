@@ -7,8 +7,8 @@ It helps users write better notes by improving grammar, clarity, and flow while 
 
 Click below to watch the demo of MindNote AI 👇
 
-(Add your demo video link here once uploaded)
-https://github.com/user-attachments/assets/XXXXXXXX
+https://github.com/user-attachments/assets/ca885b2d-bd11-4fea-b4de-0bc0004ddfe9
+
 
 📱 App Screens
 Splash Screen
